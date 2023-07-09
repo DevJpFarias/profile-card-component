@@ -26,14 +26,14 @@ body {
 }
 
 .image-top {
-  position: absolute;
+  position: fixed;
 
   top: -90%;
   left: -25%;
 }
 
 .image-bottom {
-  position: absolute;
+  position: fixed;
 
   bottom: -100%;
   right: -20%;
@@ -151,4 +151,14 @@ body {
 .followers-div p, .likes-div p, .photos-div p {
   color: hsl(0, 0%, 59%);
   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-top {
+    display: none;
+  }
+  
+  .image-bottom {
+    display: none;
+  }
 }
